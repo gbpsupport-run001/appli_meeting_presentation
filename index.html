@@ -98,9 +98,9 @@
 <section>
   <div class="eyebrow">IS事業部 発 / 2026.09.26 ご提案(2回目)</div>
   <h1>回覧板アプリの先へ ──<br><span class="accent">誰が持ち、誰が守るか</span>まで設計する</h1>
-  <p class="lede">今回は機能の話に入る前に、まず「何を作り」「何を作らないか」の範囲と、保守・コスト・情報の守り方をご説明します。最後に、社内で実績ができた後の事業展開の可能性にも触れます。</p>
+  <p class="lede">今回は機能の話に入る前に、まず「何を作り」「何を作らないか」の範囲を見直しました。AXT・FocusU・既存の社内ポータルは作り直さず、その上に足す部分だけに絞っています。あわせて保守・費用・情報の守り方、社内で実績ができた後の展開の可能性もご説明します。</p>
   <div class="card-row three">
-    <div class="card"><div class="k">01</div><h3>作る範囲の整理</h3><p>アポ・顧客管理はAXTのまま。新規は勤怠管理と社内ポータルに絞る。</p></div>
+    <div class="card"><div class="k">01</div><h3>作る範囲の整理</h3><p>アポ・顧客管理はAXT、勤怠はFocusU、社内ポータルも既存のものをそのまま使う。新しく作るのは「開きたくなる仕組み」だけ。</p></div>
     <div class="card"><div class="k">02</div><h3>保守・コスト・セキュリティ</h3><p>誰が管理者になるか、権限機能でどこまでアクセス制限をかけるか。</p></div>
     <div class="card"><div class="k">03</div><h3>事業展望</h3><p>社内実績ができれば「会社アプリ使いませんか」で外販できる保守管理システムに。</p></div>
   </div>
@@ -109,26 +109,27 @@
 <section>
   <div class="section-tag gold">対象範囲</div>
   <h2>何を作り、何を作らないか</h2>
-  <p class="lede">前回までのご質問で一番多かったのは「既存システムとの関係」でした。今回、明確に棲み分けます。</p>
+  <p class="lede">前回、勤怠管理・社内ポータルを新規で作るとお伝えしましたが、確認したところ両方すでに社内で動いているものがありました。そこで今回、作る範囲を絞り直しました。</p>
   <div class="split">
     <div class="box">
-      <h3>AXTがすでに担っている領域</h3>
+      <h3>すでにある仕組み(そのまま使う)</h3>
       <ul>
-        <li>アポイント管理</li>
-        <li>顧客管理(商談履歴・進捗)</li>
+        <li><b style="color:var(--navy);">AXT</b> ── アポイント管理・顧客管理</li>
+        <li><b style="color:var(--navy);">FocusU</b> ── 勤怠管理(出退勤・シフト)</li>
+        <li><b style="color:var(--navy);">社内ポータル(intra.runbird.net)</b> ── 社員連絡先・定例MTGアーカイブ・就業規則・宿泊予約・FAQなど</li>
       </ul>
-      <p style="font-size:12.5px; color:var(--text-faint); margin-top:12px;">→ 今回のアプリでは触れません。二重管理を避けます。</p>
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:12px;">→ 今回のアプリでは作り直しません。二重管理を避けます。</p>
     </div>
     <div class="box new">
-      <h3>今回新規で作る領域</h3>
+      <h3>今回新しく作る部分</h3>
       <ul>
-        <li><b style="color:var(--navy);">勤怠管理</b>(出退勤・シフト)</li>
-        <li><b style="color:var(--navy);">社内ポータルサイト</b>(社員名簿・連絡先・全体MTG議事録・提案資料)</li>
-        <li>回覧板・称賛機能、研修動画化(前回までの範囲)</li>
+        <li><b style="color:var(--navy);">称賛・回覧板機能</b>(社員同士のやり取り)</li>
+        <li><b style="color:var(--navy);">研修の動画講座化</b>(視聴ログで進捗を可視化)</li>
+        <li><b style="color:var(--navy);">つい開きたくなる見た目・キャラクター</b></li>
       </ul>
     </div>
   </div>
-  <div class="callout">既存のポータルサイト(社用携帯番号・メールアドレス・全体MTG議事録が載っているもの)を、このアプリに統合する形を想定しています。事業部ごとに閲覧範囲を分ける設計です。</div>
+  <div class="callout">既存の社内ポータルは情報が整理されて置いてあるものの、社長ご自身も「開く習慣がない」とおっしゃっていました。今回のアプリは、その置き場を作り直すのではなく、そこに「人が能動的に開きたくなる理由」を足すのが目的です。</div>
 </section>
 
 <section>
@@ -159,7 +160,7 @@
 <section>
   <div class="section-tag red">情報の守り方</div>
   <h2>権限機能のイメージ</h2>
-  <p class="lede">研修動画・回覧板・ポータル情報それぞれに、閲覧できる範囲を段階的に設定します。</p>
+  <p class="lede">社内ポータルで既に「社員ログイン」と「代理店様ログイン」が分かれている仕組みをそのまま踏襲し、社員側をさらに研修進捗に応じて段階分けします。</p>
   <div class="perm-grid">
     <div class="perm"><div class="lv">LV1</div><div class="who">新人</div><p>基礎研修動画のみ閲覧可。クロージング研修は非表示</p></div>
     <div class="perm"><div class="lv">LV2</div><div class="who">サブクローザー</div><p>基礎+応用研修が解放。回覧板は閲覧・投稿可</p></div>
