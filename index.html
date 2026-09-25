@@ -80,6 +80,13 @@
   .stat-big span{ font-size:15px; color:var(--text-dim); font-weight:500; margin-left:6px;}
 
   .perm-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap:10px; margin:22px 0;}
+  .tool-grid{ display:grid; grid-template-columns: repeat(2,1fr); gap:14px; margin:22px 0;}
+  .tool-card{ background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:20px; box-shadow: 0 2px 10px rgba(28,36,56,0.04); text-decoration:none; display:block; transition: transform .15s ease, box-shadow .15s ease;}
+  .tool-card:hover{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(28,36,56,0.08);}
+  .tool-card .tag{ font-size:11px; color:var(--cyan); font-weight:700; letter-spacing:0.05em; margin-bottom:8px;}
+  .tool-card h3{ font-size:15px; color:var(--navy); margin-bottom:6px;}
+  .tool-card p{ font-size:12.5px; color:var(--text-dim);}
+  .tool-card .link{ font-size:11.5px; color:var(--gold); margin-top:10px; font-weight:600;}
   .perm{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 14px; text-align:center; box-shadow: 0 2px 10px rgba(28,36,56,0.04);}
   .perm .lv{ font-size:11px; color:var(--cyan); font-weight:700; margin-bottom:8px; letter-spacing:0.05em;}
   .perm .who{ font-size:13px; color:var(--navy); font-weight:700; margin-bottom:6px;}
@@ -90,7 +97,7 @@
   .cta-box p{ font-size:13px; color:var(--text-dim);}
 
   footer{ max-width:900px; margin:0 auto; padding:40px 28px 0; text-align:center; font-size:12px; color:var(--text-faint);}
-  @media (max-width:680px){ .card-row, .card-row.three, .split, .perm-grid{grid-template-columns:1fr;} }
+  @media (max-width:680px){ .card-row, .card-row.three, .split, .perm-grid, .tool-grid{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
@@ -195,6 +202,39 @@
     <div class="perm"><div class="lv">LV4</div><div class="who">管理職</div><p>配置判断データ・全社ポータル管理権限あり</p></div>
   </div>
   <div class="callout cyan">研修の進捗に応じて鍵が開いていく設計にすれば、「早く先に進みたい」というゲーム的な動機づけにもなります。加盟店用アカウントも同様に、別区分でアクセス範囲を制限できます。</div>
+</section>
+
+<section>
+  <div class="section-tag gold">既に動いているもの</div>
+  <h2>すでに稼働中のツール群も、この社内サイトに集約</h2>
+  <p class="lede">これまで別々に作ってきたIS事業部のツールも、入口をこの社内サイトにまとめます。実物はリンクからご確認いただけます。</p>
+  <div class="tool-grid">
+    <a class="tool-card" href="https://gbpsupport-run001.github.io/is_character_demosite/" target="_blank" rel="noopener">
+      <div class="tag">研修</div>
+      <h3>テレアポ研修 by ズーミー</h3>
+      <p>キャラクターと進める新人向けテレアポ研修サイト</p>
+      <div class="link">gbpsupport-run001.github.io/is_character_demosite ↗</div>
+    </a>
+    <a class="tool-card" href="https://gbpsupport-run001.github.io/is_character_demosite/characters.html" target="_blank" rel="noopener">
+      <div class="tag">研修</div>
+      <h3>候補キャラ図鑑</h3>
+      <p>研修に登場するキャラクターの一覧。今後のアバター展開の土台にもなる</p>
+      <div class="link">.../characters.html ↗</div>
+    </a>
+    <a class="tool-card" href="https://gbpsupport-run001.github.io/is_manual/" target="_blank" rel="noopener">
+      <div class="tag">マニュアル</div>
+      <h3>営業マニュアル(研修資料参照)</h3>
+      <p>これまでの研修資料を落とし込んだ営業マニュアルサイト</p>
+      <div class="link">gbpsupport-run001.github.io/is_manual ↗</div>
+    </a>
+    <a class="tool-card" href="https://gbpsupport-run001.github.io/rumbird-is-shodan-analyzer/" target="_blank" rel="noopener">
+      <div class="tag">分析</div>
+      <h3>商談分析ツール</h3>
+      <p>商談ログを読み込ませて分析・点数化するツール</p>
+      <div class="link">gbpsupport-run001.github.io/rumbird-is-shodan-analyzer ↗</div>
+    </a>
+  </div>
+  <div class="callout">これらもバラバラな置き場所になっているので、社内サイトからワンクリックで開けるようにまとめます。</div>
 </section>
 
 <section>
