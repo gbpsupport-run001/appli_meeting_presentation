@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>社内アプリ導入提案 ── 作る範囲・守り方・この先の展開 | Runbird IS事業部</title>
+<title>社内アプリ導入提案 ── 社内サイトへの統合 | Runbird IS事業部</title>
 <style>
   :root{
     --bg: #f7f6f2;
@@ -97,12 +97,29 @@
 
 <section>
   <div class="eyebrow">IS事業部 発 / 2026.09.26 ご提案(2回目)</div>
-  <h1>回覧板アプリの先へ ──<br><span class="accent">誰が持ち、誰が守るか</span>まで設計する</h1>
-  <p class="lede">今回は機能の話に入る前に、まず「何を作り」「何を作らないか」の範囲を見直しました。AXT・FocusU・既存の社内ポータルは作り直さず、その上に足す部分だけに絞っています。あわせて保守・費用・情報の守り方、社内で実績ができた後の展開の可能性もご説明します。</p>
+  <h1>バラバラなシステムを、<br><span class="accent">ひとつの社内サイト</span>にまとめる</h1>
+  <p class="lede">今回は機能の話に入る前に、まず「何を作り」「何を作らないか」の範囲を見直しました。AXT・FocusUはそのまま、既存の社内ポータル(intra.runbird.net)は今後この「社内サイト」に統一していきます。あわせて情報の守り方、社内で実績ができた後の展開の可能性もご説明します。</p>
   <div class="card-row three">
-    <div class="card"><div class="k">01</div><h3>作る範囲の整理</h3><p>アポ・顧客管理はAXT、勤怠はFocusU、社内ポータルも既存のものをそのまま使う。新しく作るのは「開きたくなる仕組み」だけ。</p></div>
-    <div class="card"><div class="k">02</div><h3>保守・コスト・セキュリティ</h3><p>誰が管理者になるか、権限機能でどこまでアクセス制限をかけるか。</p></div>
+    <div class="card"><div class="k">01</div><h3>作る範囲の整理</h3><p>アポ・顧客管理はAXT、勤怠はFocusUのまま。社内ポータルはこの社内サイトに統一する。</p></div>
+    <div class="card"><div class="k">02</div><h3>情報の守り方</h3><p>誰が管理者になるか、権限機能でどこまでアクセス制限をかけるか。</p></div>
     <div class="card"><div class="k">03</div><h3>事業展望</h3><p>社内実績ができれば「会社アプリ使いませんか」で外販できる保守管理システムに。</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-tag gold">全体像</div>
+  <h2>バラバラなシステムを、1つに</h2>
+  <p class="lede">現状、顧客管理・勤怠・社内ポータル・研修資料などがそれぞれ別の場所に散らばっています。今回の社内サイトは、これらの入口を1つにまとめる位置づけです。</p>
+  <div class="flow">
+    <div class="fstep">
+      <div class="badge">今</div>
+      <div><h4>バラバラな状態</h4><p>AXT(顧客管理)、FocusU(勤怠)、intra.runbird.net(ポータル)、研修資料、称賛のやり取りがそれぞれ別々の場所に存在</p></div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="fstep cyan">
+      <div class="badge">先</div>
+      <div><h4>社内サイトに統一</h4><p>各システムへの入口・社員同士のやり取り・研修をひとつのサイトに集約。既存の社内ポータルはここに統一していく</p></div>
+    </div>
   </div>
 </section>
 
@@ -116,25 +133,25 @@
       <ul>
         <li><b style="color:var(--navy);">AXT</b> ── アポイント管理・顧客管理</li>
         <li><b style="color:var(--navy);">FocusU</b> ── 勤怠管理(出退勤・シフト)</li>
-        <li><b style="color:var(--navy);">社内ポータル(intra.runbird.net)</b> ── 社員連絡先・定例MTGアーカイブ・就業規則・宿泊予約・FAQなど</li>
       </ul>
-      <p style="font-size:12.5px; color:var(--text-faint); margin-top:12px;">→ 今回のアプリでは作り直しません。二重管理を避けます。</p>
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:12px;">→ この社内サイトでは作り直しません。二重管理を避けます。</p>
     </div>
     <div class="box new">
-      <h3>今回新しく作る部分</h3>
+      <h3>この社内サイトに統一していく部分</h3>
       <ul>
+        <li><b style="color:var(--navy);">既存の社内ポータル(intra.runbird.net)</b>の内容(社員連絡先・定例MTGアーカイブ・就業規則・宿泊予約・FAQなど)</li>
         <li><b style="color:var(--navy);">称賛・回覧板機能</b>(社員同士のやり取り)</li>
         <li><b style="color:var(--navy);">研修の動画講座化</b>(視聴ログで進捗を可視化)</li>
-        <li><b style="color:var(--navy);">つい開きたくなる見た目・キャラクター</b></li>
+        <li><b style="color:var(--navy);">社員一人ひとりの専用アバター</b></li>
       </ul>
     </div>
   </div>
-  <div class="callout">既存の社内ポータルは情報が整理されて置いてあるものの、社長ご自身も「開く習慣がない」とおっしゃっていました。今回のアプリは、その置き場を作り直すのではなく、そこに「人が能動的に開きたくなる理由」を足すのが目的です。</div>
+  <div class="callout">既存の社内ポータルは情報が整理されて置いてあるものの、社長ご自身も「開く習慣がない」とおっしゃっていました。今回の社内サイトは、その置き場を統一しつつ、そこに「人が能動的に開きたくなる理由」を足すのが目的です。</div>
 </section>
 
 <section>
   <div class="section-tag red">情報の守り方</div>
-  <h2>保守・コスト・情報漏洩への対応</h2>
+  <h2>誰が管理し、情報漏洩をどう防ぐか</h2>
   <p class="lede">「誰が管理するのか」「ノウハウが外に漏れないか」というご懸念に対する回答です。</p>
   <div class="risk">
     <b>懸念:</b> 佐久間さん個人がソースコード・データを管理する状態は、属人化のリスクがあります。ノウハウが集約される場所だからこそ、個人の持ち物ではなく会社の資産として管理する必要があります。
@@ -152,8 +169,18 @@
     <div class="farrow">↓</div>
     <div class="fstep red">
       <div class="badge">3</div>
-      <div><h4>保守体制を明文化</h4><p>誰が更新・アップデートを担当するか、工数とコストを事前に見積もって運用ルール化します。</p></div>
+      <div><h4>保守体制を明文化</h4><p>誰が更新・アップデートを担当するか、事前にルール化します。</p></div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-tag gold">見た目</div>
+  <h2>社員一人ひとりの専用アバター</h2>
+  <p class="lede">社内サイトにログインすると、自分専用のアバターが出迎える形にします。称賛のやり取りや研修進捗も、このアバターを通じて表示します。</p>
+  <div class="card-row">
+    <div class="card"><div class="k">狙い</div><h3>「自分ごと」にする</h3><p>共通のポータル画面ではなく、自分のアバターがいることで、社内サイトを開く動機になります。</p></div>
+    <div class="card"><div class="k">連動</div><h3>研修・称賛と連動</h3><p>研修が進む、称賛をもらう、といった行動がアバターの見た目や状態に反映される形も検討できます。</p></div>
   </div>
 </section>
 
@@ -163,24 +190,11 @@
   <p class="lede">社内ポータルで既に「社員ログイン」と「代理店様ログイン」が分かれている仕組みをそのまま踏襲し、社員側をさらに研修進捗に応じて段階分けします。</p>
   <div class="perm-grid">
     <div class="perm"><div class="lv">LV1</div><div class="who">新人</div><p>基礎研修動画のみ閲覧可。クロージング研修は非表示</p></div>
-    <div class="perm"><div class="lv">LV2</div><div class="who">サブクローザー</div><p>基礎+応用研修が解放。回覧板は閲覧・投稿可</p></div>
+    <div class="perm"><div class="lv">LV2</div><div class="who">サブクローザー</div><p>基礎+応用研修が解放。社内サイトでの称賛・投稿可</p></div>
     <div class="perm"><div class="lv">LV3</div><div class="who">クローザー</div><p>全研修動画+商談分析ツール利用可</p></div>
     <div class="perm"><div class="lv">LV4</div><div class="who">管理職</div><p>配置判断データ・全社ポータル管理権限あり</p></div>
   </div>
   <div class="callout cyan">研修の進捗に応じて鍵が開いていく設計にすれば、「早く先に進みたい」というゲーム的な動機づけにもなります。加盟店用アカウントも同様に、別区分でアクセス範囲を制限できます。</div>
-</section>
-
-<section>
-  <div class="section-tag gold">費用</div>
-  <h2>保守・運用コストの考え方</h2>
-  <table>
-    <tr><th>項目</th><th>内容</th><th>概算</th></tr>
-    <tr><td>開発</td><td>Claude Code(Proプラン)で自社開発</td><td class="strong">月2,000〜3,000円程度</td></tr>
-    <tr><td>公開・インフラ</td><td>Firebase Hosting / GitHub Pages(無料枠内)</td><td class="strong">0円</td></tr>
-    <tr><td>保守・更新</td><td>担当者の工数(人件費)</td><td class="strong">運用フェーズで体制を確定</td></tr>
-    <tr><td>ソースコード管理</td><td>会社名義のリポジトリで一元管理</td><td class="strong">0円(実装コストのみ)</td></tr>
-  </table>
-  <div class="callout"><b>正直な現状:</b> 保守の担当者・工数配分については、まだ明確な答えが出ていません。ここは運用開始前に体制を確定させる必要がある項目として、引き続きご相談したいです。</div>
 </section>
 
 <section>
@@ -191,11 +205,11 @@
     <div class="card"><div class="k">STEP A</div><h3>加盟店の管理基盤として展開</h3><p>フランチャイズ管理は現状ラインでのやり取りが中心で属人化しています。ログイン機能・権限管理を使えば、加盟店ごとの研修進捗・資料閲覧を一元管理できます。</p></div>
     <div class="card"><div class="k">STEP B</div><h3>「会社アプリ使いませんか」で外販</h3><p>社内で使い勝手と保守体制が固まれば、他社向けの保守管理システムとして販売できる可能性があります。</p></div>
   </div>
-  <div class="callout cyan">現状バラバラに存在する顧客管理・勤怠・HR・ポータルの仕組みを1つにまとめた実績自体が、他社への提案材料になります。</div>
+  <div class="callout cyan">現状バラバラに存在する顧客管理・勤怠・ポータルの入口を1つにまとめた実績自体が、他社への提案材料になります。</div>
 </section>
 
 <footer>
-  IS事業部 &nbsp;|&nbsp; 2026.09.26 ご提案(2回目) &nbsp;|&nbsp; 作る範囲・守り方・この先の展開
+  IS事業部 &nbsp;|&nbsp; 2026.09.26 ご提案(2回目) &nbsp;|&nbsp; 社内サイトへの統合
 </footer>
 
 </body>
